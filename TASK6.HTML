@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gym Owner's Survey Form</title>
+</head>
+<body>
+    <h1>Gym Owner's Survey</h1>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="membership">Membership Plan:</label>
+        <select id="membership" name="membership">
+            <option value="basic">Basic</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+        </select><br><br>
+
+        <label for="cleanliness">Cleanliness Rating:</label><br>
+        <input type="radio" id="cleanliness1" name="cleanliness" value="1" required>
+        <label for="cleanliness1">1</label>
+        <input type="radio" id="cleanliness2" name="cleanliness" value="2">
+        <label for="cleanliness2">2</label>
+        <input type="radio" id="cleanliness3" name="cleanliness" value="3">
+        <label for="cleanliness3">3</label>
+        <input type="radio" id="cleanliness4" name="cleanliness" value="4">
+        <label for="cleanliness4">4</label>
+        <input type="radio" id="cleanliness5" name="cleanliness" value="5">
+        <label for="cleanliness5">5</label><br><br>
+
+        <label for="equipment">Equipment Used:</label><br>
+        <input type="checkbox" id="rowing machine" name="equipment" value="rowing machine">
+        <label for="rowing machine">Rowing Machine</label>
+        <input type="checkbox" id="weights" name="equipment" value="weights">
+        <label for="weights">Weights</label>
+        <input type="checkbox" id="bike" name="equipment" value="bike">
+        <label for="bike">Stationary Bike</label><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
