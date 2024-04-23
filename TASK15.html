@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		/*css tables*/
+		#student{
+			font-family: verdana;
+			border-collapse: collapse;
+			width:90%;
+
+		}
+
+		#student td,#student th{
+			border: 2px solid black;
+			padding: 10px;
+		}
+		#student tr:nth-child(even){background-color: lightskyblue;}
+
+		#student tr:hover{background-color: #e9967a;}
+
+		#student th{
+			text-align:center;
+			background-color: #000;
+			color: white;
+			padding-top: 14px;
+			padding-bottom: 12px;
+		}
+
+		/*css position properties*/
+
+		div.static{
+			position: static;
+			border: 3px solid;
+		
+		}
+
+		div.relative
+			{
+			position: relative;
+			border: 3px solid;
+			top: 20px;
+			}
+	
+		div.fixed
+			{
+			position: fixed;
+			border: 3px solid;
+			bottom:0px;
+			right: 4px;
+			width:300px;
+			background-color:lightskyblue;
+			}
+
+		div.absoulate_ancestor
+			{
+			position:relative;
+			width: 500px;
+			height: 200px;
+			border: 2px solid black;
+			}
+
+		div.absoulate
+			{
+			position: absolute;
+			border: 3px solid lightskyblue;
+			top: 80px;
+			right: 10px;
+			width: 200px;
+			height: 70px;
+			}
+
+		div.sticky
+			{
+			top: 0px;
+			position:sticky;
+			border: 4px solid darkblue;
+			padding: 5px;
+			border: 2px solid black;
+			background-color: skyblue;
+			color:#000;
+			}
+		</style>
+</head>
+<body>
+	<title>CSS Tables and Position</title>
+	<h1 style="text-decoration:underline; font-size:61px; color:black; text-align: center;">CSS Tables and Position</h1>
+	 <table id="student" align="center">
+     	<!--tables creation-->
+    <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Department</th>
+    </tr>
+    <br>
+    <tr>
+        <td>101</td>
+        <td>Rohit</td>
+        <td>rohitb25@gmail.com</td>
+        <td>1234567890</td>
+        <td>BCA</td>
+    </tr>
+    <tr>
+        <td>102</td>
+        <td>Chandrakant</td>
+        <td>chandu@gmail.com</td>
+        <td>9876543210</td>
+        <td>Pharm D</td>
+    </tr>
+    <tr>
+        <td>103</td>
+        <td>Yash</td>
+        <td>yash26@gmail.com</td>
+        <td>4567891230</td>
+        <td>BAMS</td>
+    </tr>
+    <tr>
+        <td>104</td>
+        <td>Rahul</td>
+        <td>rahulc4@gmail.com</td>
+        <td>4567823430</td>
+        <td>BE</td>
+    </tr>
+    <tr>
+        <td>105</td>
+        <td>Vishal</td>
+        <td>vishal2@gmail.com</td>
+        <td>4567961230</td>
+        <td>BA</td>
+    </tr>
+</table>
+	<h2 style="text-decoration: underline;"> Static Position:</h2>
+	<div class="static">
+		Example For Static Position
+	</div>
+
+	
+	<h2 style="text-decoration: underline;"> Relative Position: </h2>
+	<div class="relative">
+		Example For Relative Position
+	</div>
+<br>
+
+	
+	<h2 style="text-decoration: underline;"> Fixed Position:</h2>
+	<div class="fixed">
+		Example For Fixed Position
+	</div>
+
+	
+	<h2 style="text-decoration: underline;">Absoulate Position:</h2>
+	<div class="absoulate_ancestor">
+		Example For Absoulate_ancestor
+	<div class="absoulate">
+		Example For Absoulate Position</div>
+	</div>
+
+
+		<h2 style="text-decoration: underline;"> Sticky Position: </h2>
+	<div class="sticky">
+		Example For Sticky Position</div>
+	<p style="font-family: verdana; font-size:40px; padding-bottom: 700px;">The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky).</p>
+</body>
+</html>
