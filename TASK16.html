@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+        span.a {
+	    display: inline; 
+            width: 150px;
+            height: 60px;
+            padding: 2px;
+            border: 2px solid #000;  
+            background-color: blueviolet; 
+       }
+        span.b {
+            display: inline-block;
+            width: 150px;
+            height: 90px;
+            padding: 2px;
+            border: 2px solid #000;    
+            background-color: lightskyblue; 
+        }
+  
+        span.c {
+            display: block;
+            width: 150px;
+            height: 90px;
+            padding: 2px;
+            border: 2px solid #000;    
+            background-color: darkcyan;
+        }
+        div1
+        {
+            background-color:skyblue;
+            width: 180px;
+            height: 61px;
+            border: 1px solid;
+            overflow:visible;
+        }
+        
+    </style>
+
+<body>
+    <title>CSS NAVIGATION AND OVERFLOW</title>
+    <h2 style="text-decoration:underline; font-size:40px">Overflow Visible</h2>
+
+    <div1>The overflow property specifies what should happen if content overflows an element's box.</div1><br><br>
+    <div1>This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.</div1><br><br><br><br>
+
+<h2 style="text-decoration: underline; font-size: 40px;">The display Property</h2>
+
+<h2>display: inline</h2>
+<div>ABCDEFGHIJKLMNOPQ<span class="a">R</span> <span class="a">S </span>TUVWXYZ</div>
+
+<h2>display: inline-block</h2>
+<div>ABCDEFGHIJKLMNOPQ<span class="b">R</span> <span class="b">S</span>TUVWXYZ</div>
+
+<h2>display: block</h2>
+<div>ABCDEFGHIJKLMNOPQ<span class="c">R</span> <span class="c">S</span>TUVWXYZ</div>
+
+</body>
+</html>
